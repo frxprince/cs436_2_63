@@ -19,9 +19,9 @@ class MainActivity : AppCompatActivity() {
 
     calBtn.setOnClickListener {
         if (isCm.isChecked){
-            outputText.text="${inputText.text.toString().toDouble()/2.54} inch"
+            outputText.text="${inputText.text.toString().toDouble()/2.54} "+resources.getString(R.string.inch)
         }else{
-            outputText.text="${inputText.text.toString().toDouble()*2.54} cm"
+            outputText.text="${inputText.text.toString().toDouble()*2.54} ${resources.getString(R.string.cm)}"
         }
 
     }
