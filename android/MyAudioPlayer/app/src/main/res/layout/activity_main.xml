@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonLoadResource2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Greeting"
+        app:layout_constraintStart_toStartOf="@+id/buttonLoadResource"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLoadResource" />
+
+    <Button
+        android:id="@+id/buttonLoadResource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Load resource"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pause"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonStop"
+        app:layout_constraintStart_toEndOf="@+id/buttonPlay" />
+
+    <Button
+        android:id="@+id/buttonStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonLoadAsset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Load Asset"
+        app:layout_constraintStart_toStartOf="@+id/buttonLoadResource2"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLoadResource2" />
+
+    <Button
+        android:id="@+id/buttonInternet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Internet"
+        app:layout_constraintStart_toStartOf="@+id/buttonLoadAsset"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLoadAsset" />
+
+    <Button
+        android:id="@+id/buttonLoadSD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SDCARD"
+        app:layout_constraintStart_toStartOf="@+id/buttonInternet"
+        app:layout_constraintTop_toBottomOf="@+id/buttonInternet" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
